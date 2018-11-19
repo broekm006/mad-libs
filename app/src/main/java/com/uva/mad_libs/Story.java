@@ -82,6 +82,7 @@ public class Story implements Serializable {
         return filledIn >= placeholders.size();
     }
 
+    /** returns number of filled in placeholders for the progress bar */
     public int Progress(){
         return filledIn + 1;
     }

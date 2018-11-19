@@ -3,7 +3,6 @@ package com.uva.mad_libs;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class FinalStory extends MainActivity {
@@ -15,10 +14,12 @@ public class FinalStory extends MainActivity {
         Intent intent = getIntent();
         story = (Story) intent.getSerializableExtra("story");
 
+        // print story to textview
         TextView txt = findViewById(R.id.textView6);
         txt.setText(story.toString());
     }
 
+    // clear story when reset is clicked
     public void ResetStory(View view){
         story.clear();
         startActivity(new Intent(FinalStory.this, Choose.class));

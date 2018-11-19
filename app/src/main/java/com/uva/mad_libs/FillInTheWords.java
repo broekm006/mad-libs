@@ -3,6 +3,7 @@ package com.uva.mad_libs;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -17,17 +18,16 @@ public class FillInTheWords extends MainActivity {
         Intent intent = getIntent();
         story = (Story) intent.getSerializableExtra("story");
 
-        // update text field
+        // set initial textview based on number of placeholders
         TextView txt = findViewById(R.id.textView8);
         txt.setText(story.getPlaceholderCount() + " word(s) remaining");
 
+        // initialize progress bar max based on number of placeholders
         ProgressBar progress = findViewById(R.id.progressBar3);
         progress.setMax(story.getPlaceholderCount());
     }
 
     public void WhenClicked(View view){
-        Button btn = findViewById(R.id.button5);
-
         // Update Remaining Words counter
         TextView txt = findViewById(R.id.textView8);
         txt.setText(story.getPlaceholderRemainingCount() + " word(s) remaining");
@@ -46,6 +46,12 @@ public class FillInTheWords extends MainActivity {
         hint.setText("");
         hint.setHint(story.getNextPlaceholder());
 
+
+        // update what to enter notification
+        TextView noti = findViewById(R.id.textView9);
+        noti.setText("please type a/an " + story.getNextPlaceholder());
+
+        // if all placeholders are filled in > go to the final story view
         if (story.isFilledIn()) {
             Intent intent = new Intent(FillInTheWords.this, FinalStory.class);
             intent.putExtra("story", story);

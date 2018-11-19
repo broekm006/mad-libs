@@ -14,9 +14,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    // when button is cicked go to next activity
     public void buttonClicked(View view) {
         startActivity(new Intent(MainActivity.this, Choose.class));
-
     }
 }
 

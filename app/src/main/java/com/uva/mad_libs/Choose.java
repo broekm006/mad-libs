@@ -3,10 +3,7 @@ package com.uva.mad_libs;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-
 import java.io.InputStream;
-import java.net.CookieStore;
 
 public class Choose extends MainActivity{
     InputStream is;
@@ -17,6 +14,7 @@ public class Choose extends MainActivity{
         setContentView(R.layout.choose_story);
     }
 
+    // when buttn is clicked choose the matching story
     public void choose_story(View view) {
         switch (view.getId()) {
             case R.id.button_simple:
