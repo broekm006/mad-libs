@@ -17,7 +17,7 @@
  */
 
 // !YOU MAY WANT TO CHANGE THE PACKAGE BELOW SO THAT IT MATCHES YOUR PROJECT'S PACKAGE!
-package com.example.stepp.madlibs;
+package com.uva.mad_libs;
 
 import java.io.*;
 import java.util.*;
@@ -80,6 +80,10 @@ public class Story implements Serializable {
     /** returns true if all placeholders have been filled in */
     public boolean isFilledIn() {
         return filledIn >= placeholders.size();
+    }
+
+    public int Progress(){
+        return filledIn + 1;
     }
 
     /** reads initial story text from the given input stream */

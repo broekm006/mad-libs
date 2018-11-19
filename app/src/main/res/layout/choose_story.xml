@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/button_simple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Simple"
+        android:onClick="choose_story"
+        />
+
+    <Button
+        android:id="@+id/button_tarzan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Tarzan"
+        android:onClick="choose_story"
+        />
+
+    <Button
+        android:id="@+id/button_university"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="University"
+        android:onClick="choose_story"
+        />
+
+    <Button
+        android:id="@+id/button_clothes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Clothes"
+        android:onClick="choose_story"
+        />
+
+    <Button
+        android:id="@+id/button_dance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Dance"
+        android:onClick="choose_story"
+        />
+</LinearLayout>
