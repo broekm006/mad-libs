@@ -9,43 +9,48 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Simple"
+        android:fontFamily="@font/aclonica"
         android:onClick="choose_story"
-        />
+        android:text="Simple"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/button_tarzan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Tarzan"
+        android:fontFamily="@font/aclonica"
         android:onClick="choose_story"
-        />
+        android:text="Tarzan"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/button_university"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="University"
+        android:fontFamily="@font/aclonica"
         android:onClick="choose_story"
-        />
+        android:text="University"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/button_clothes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Clothes"
+        android:fontFamily="@font/aclonica"
         android:onClick="choose_story"
-        />
+        android:text="Clothes"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/button_dance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Dance"
+        android:fontFamily="@font/aclonica"
         android:onClick="choose_story"
-        />
+        android:text="Dance"
+        android:textSize="24sp" />
 </LinearLayout>

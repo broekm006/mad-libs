@@ -11,20 +11,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Your Mad Lib Story!" />
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Your Mad Lib Story!"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:fontFamily="@font/aclonica"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/aclonica"
+        android:onClick="ResetStory"
         android:text="MAKE ANOTHER STORY"
-        android:onClick="ResetStory"/>
+        android:textSize="18sp" />
 
 </LinearLayout>
