@@ -2,6 +2,7 @@ package com.uva.mad_libs;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
@@ -17,6 +18,7 @@ public class FinalStory extends MainActivity {
         // print story to textview
         TextView txt = findViewById(R.id.textView6);
         txt.setText(story.toString());
+        txt.setMovementMethod(new ScrollingMovementMethod());
     }
 
     // clear story when reset is clicked
